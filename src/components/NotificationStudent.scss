@@ -1,0 +1,13 @@
+@import '../mixins';
+@import '../colors';
+
+
+.title__notifications {
+  font-family: Nunito Bold, sans-serif;
+  font-size: 26px;
+  color: $blue;
+}
+
+.notifications {
+    padding: 2rem 1rem;
+}

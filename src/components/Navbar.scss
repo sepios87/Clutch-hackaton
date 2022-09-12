@@ -1,0 +1,49 @@
+@import '../colors';
+
+.nav {
+    background-color: $blue;
+    border-radius: 38px 38px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 4% 5% 5%;
+    }
+
+    &__item {
+        height: 28px;
+        position: relative;
+
+        & path {
+            transition: .2s;
+            stroke: $purple;
+            stroke-width: 2;
+        }
+
+        &--selected path {
+            stroke: $orange;
+        }
+
+        &--selected::after  {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            display: block;
+            bottom: -10px;
+            background-color: $orange;
+            left: 50%;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+
+        &--center {
+            height: 38px;
+        }
+    }
+}

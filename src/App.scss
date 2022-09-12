@@ -1,0 +1,96 @@
+@import './colors';
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../public/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url("../public/fonts/Poppins-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../public/fonts/Nunito-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito Bold';
+  src: url("../public/fonts/Nunito-ExtraBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito Light';
+  src: url("../public/fonts/Nunito-Light.ttf") format('truetype');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $blue;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.title-underline {
+    font-size: 2rem;
+    position: relative;
+
+    &::before {
+        z-index: -1;
+        content: '';
+        display: block;
+        background-color: $orange;
+        width: 40%;
+        max-width: 200px;
+        height: 13px;
+        position: absolute;
+        bottom: 0;
+        left: -5px;
+    }
+}
+
+.page {
+  padding: 2rem 1rem;
+}
+
+a {
+  display: block;
+}

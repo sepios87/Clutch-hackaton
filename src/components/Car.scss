@@ -1,0 +1,38 @@
+@import '../mixins';
+
+.card-car {
+  text-decoration: none;
+  color: black;
+  @include card;
+  background-color: white;
+  flex-direction: column;
+  width: fit-content;
+  border-radius: 13px;
+  z-index: 1000;
+
+  &-title {
+    font-family: Nunito Bold, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+  }
+
+  &-name {
+    font-size: 12px;
+    font-family: Nunito Light, sans-serif;
+    text-align: left;
+    width: 100%;
+    padding-top: .5rem;
+  }
+
+  &-hour {
+    font-size: 12px;
+    font-family: Nunito Bold, sans-serif;
+    text-align: left;
+    width: 100%;
+  }
+
+  &-icon {
+    margin-bottom: 1rem;
+  }
+}

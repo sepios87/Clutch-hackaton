@@ -1,0 +1,22 @@
+.map-back {
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+}
+
+.map-student {
+  height: 100vh;
+}
+
+.cards-instit {
+  position: absolute;
+  z-index: 1000;
+  bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: 0 .5rem;
+}
+
+
+

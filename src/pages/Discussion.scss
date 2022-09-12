@@ -1,0 +1,59 @@
+@import '../mixins';
+
+.purple path {
+  fill: #878ADB;
+  stroke: #878ADB;
+}
+
+.card-discussion {
+  @include card;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.card__img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  gap: 3rem;
+}
+
+.message {
+  padding: 2rem 1rem;
+  text-align: left;
+  position: relative;
+  line-height: 1.5rem;
+
+  &__body {
+    font-size: 14px;
+  }
+
+  &__date {
+    font-size: 18px;
+    color: rgba(135, 138, 219, 0.5);
+    position: absolute;
+    bottom: -2rem;
+  }
+
+  &--other {
+    background-color: #3B3D73;
+    border-radius: 30px 30px 30px 0;
+    color: white;
+  }
+
+  &--me {
+    background-color: #FDDACC;
+    border-radius: 30px 30px 0 30px;
+    color: #3B3D73;
+  }
+
+}

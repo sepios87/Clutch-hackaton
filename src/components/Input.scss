@@ -1,0 +1,15 @@
+.input {
+  background-color: #FDDACC;
+  border: 0;
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  border-radius: 13px;
+
+  &::placeholder {
+    color: white;
+  }
+
+  &--secondary {
+    background-color: rgba(135, 138, 219, 0.5);
+  }
+}

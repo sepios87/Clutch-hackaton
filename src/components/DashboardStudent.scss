@@ -1,0 +1,140 @@
+@import '../mixins';
+@import '../colors';
+
+.header {
+  &-dashboard {
+    background-color: #3B3D73;
+    padding: 2rem 2rem;
+    border-radius: 0 0 60px 60px;
+  }
+}
+
+.buttons-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+
+  &__icon {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    path {
+      stroke: $orange;
+    }
+
+    &--blue {
+      path {
+        stroke: $blue;
+      }
+    }
+  }
+
+  &__button {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: 70%;
+    background-color: $orange;
+    color: white;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 13px;
+    text-decoration: none;
+    text-align: center;
+
+    &--blue {
+      background-color: $blue;
+    }
+  }
+}
+
+.title-underline--white {
+  font-size: 2rem;
+  position: relative;
+  color: white;
+  z-index: 0;
+  padding: .5rem 0 0 1rem;
+  font-family: Nunito Bold, sans-serif;
+  width: fit-content;
+
+  &::before {
+    z-index: -1;
+    content: '';
+    display: block;
+    background-color: #f79a6f;
+    width: 60%;
+    max-width: 200px;
+    height: 13px;
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+  }
+}
+
+.title__dashboard {
+  font-family: Nunito Bold, sans-serif;
+  font-size: 26px;
+  color: #f79a6f;
+}
+
+.dashboard {
+  &-next {
+    padding: 2rem 1rem;
+  }
+}
+
+.card-course-student {
+  @include card;
+  position: relative;
+
+  &__img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 13px;
+    object-fit: cover;
+  }
+
+  &-infos {
+    padding-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  &-date {
+    font-family: Nunito Light, sans-serif;
+  }
+
+  &-hour {
+    display: flex;
+    align-items: center;
+    font-family: Nunito Bold, sans-serif;
+    font-size: 22px;
+  }
+
+  &-msg {
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 1rem);
+    height: 2rem;
+    width: 2rem;
+
+    & path {
+      stroke: #3B3D73;
+    }
+  }
+}
+
+.cards-student {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

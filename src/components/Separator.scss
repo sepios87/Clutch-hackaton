@@ -1,0 +1,19 @@
+.separator {
+  text-align: center;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 80vw;
+    background-color: black;
+    position: relative;
+    bottom: 8px;
+    z-index: -1;
+  }
+
+  &-text {
+    background-color: white;
+    padding: 0 .5rem;
+  }
+}

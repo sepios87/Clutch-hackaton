@@ -1,0 +1,142 @@
+@import '../colors';
+@import '../mixins';
+
+.headerHome {
+    height: calc(100vh - 50px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.leading {
+    background-color: $blue;
+    clip-path: ellipse(120% 100% at 0% 0%);
+    width: 100%;
+    box-sizing: border-box;
+    height: 50vh;
+    padding: 2rem 0 0 2rem;
+    position: relative;
+
+    &__image {
+        width: 80px;
+    }
+
+    &__title {
+        color: $orange;
+        font-size: 4.2rem;
+    }
+
+    &__content {
+        color: white;
+        position: absolute;
+        bottom: 30%;
+        width: 50%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 3px;
+        }
+    }
+}
+
+.circlePrice {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: $orange;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 38vh;
+    right: 20%;
+
+    &__price {
+        color: white;
+        margin-bottom: 5px;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    &__text {
+        color: $blue;
+        font-weight: 700;
+    }
+}
+
+.connectHome {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 5%;
+    line-height: 1.5rem;
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        margin-top: 6vh;
+    }
+
+    &__button {
+        @include button;
+
+        &--blue {
+            @include button(false, $blue);
+        }
+    }
+}
+
+.contentHome {
+
+    margin: 6%;
+
+    &__text {
+        line-height: 1.5rem;
+    }
+
+    &__title {
+        font-size: 4rem;
+        color: $orange;
+    }
+
+    &__container {
+        margin: 12% 0;
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+}
+
+.numbersHome {
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+        flex-shrink: 0;
+        box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.25);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        text-align: center;
+    }
+
+    &__number {
+        color: $orange;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,58 @@
+.timeline-item {
+  position: relative;
+
+  &:not(:last-child)::after {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: .73rem;
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed #878ADB;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+    z-index: 1;
+  }
+
+  &__title {
+    padding-left: 2rem;
+    padding-top: .15rem;
+    font-family: Nunito Bold, sans-serif;
+    font-size: 20px;
+    color: #3B3D73;
+  }
+
+  &__infos {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--flex {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      padding: 1rem 0 2rem 1rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    font-family: Nunito Light, sans-serif;
+    font-size: 15px;
+
+    &>p {
+      margin-left: 1rem;
+      font-size: 15px;
+    }
+  }
+}

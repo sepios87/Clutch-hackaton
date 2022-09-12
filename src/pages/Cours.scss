@@ -1,0 +1,13 @@
+@import '../mixins';
+@import '../colors';
+
+.page-cours{
+    padding: 2rem 2rem;
+
+    &__title{
+        padding-top: 2rem;
+        font-family: Nunito Bold, sans-serif;
+        font-size: 26px;
+        color: $orange;
+    }
+}

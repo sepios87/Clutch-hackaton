@@ -1,0 +1,40 @@
+@import '../mixins';
+@import '../colors';
+
+.form {
+  padding: 2rem 3.5rem 0;
+}
+
+.form__check {
+  width: 100%;
+
+  &-choices {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__radio {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  height: 15px;
+  width: 15px;
+  border: 1.5px solid #878ADB;
+  border-radius: 3px;
+
+  &:checked {
+    background-color: #878ADB;
+  }
+}
+
+.signup {
+  &__button {
+    @include button(false, $orange, 230px);
+
+    &--blue {
+      @include button(false, $blue);
+    }
+  }
+}

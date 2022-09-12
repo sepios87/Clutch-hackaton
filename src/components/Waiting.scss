@@ -1,0 +1,40 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3B3D73;
+  overflow-x: hidden;
+  &__img {
+    width: 50%;
+  }
+  &__nom {
+    margin-top: 2rem;
+    color: #F79A6F;
+    font-size: 3.5rem;
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: voiture 3s;
+    transform: translateX(330px);
+  }
+}
+
+@keyframes voiture{
+  0% {
+    transform: translateX(-310px);
+  }
+  25% {
+    transform: translateX(0);;
+  }
+  75% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(330px);
+  }
+}
