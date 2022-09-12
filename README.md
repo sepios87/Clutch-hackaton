@@ -1,5 +1,5 @@
 # Hackaton React 2022 - clutch
-Moad Benayadi - Lucas Bouchet - Manon Deleest - Océane Guilloizeau - Benjamin Pelaudeix - Valentin Rougier - Florian Toribio
+Moad Benayadi - Lucas Bouchet - [Manon Deleest](https://github.com/manon-deleest/manon-deleest) - Océane Guilloizeau - [Benjamin Pelaudeix](https://github.com/Benjamin-Pelaudeix) - Valentin Rougier - Florian Toribio
 
 **Ressources :**
 - [Figma du projet](https://www.figma.com/file/1XPuijBWrDbjBRFCuZwtel/Clutch?node-id=0%3A1).
